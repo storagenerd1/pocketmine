@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-import argparse, yaml, configparser, re, io, os
+# RCS
+import argparse
+import yaml
+import configparser
+import re
+import io
+import os
 
 parser = argparse.ArgumentParser()
 with open('server.properties', 'r') as properties:

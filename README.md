@@ -7,8 +7,8 @@ Builds will also be tagged with the _build number_ as reported by http://www.poc
 ### To run a Pocketmine server in a docker container
 
 ```bash
-docker pull bartt/pocketmine:latest
-docker run -d -p 19132:19132 -p 19132:19132/udp --name pocketmine bartt/pocketmine:latest
+docker pull storagenerd1/pocketmine:latest
+docker run -d -p 19132:19132 -p 19132:19132/udp --name pocketmine storagenerd1/pocketmine:latest
 ```
 
 You can now connect to the hosts's IP address (or hostname) at Pocketmine's default port: 19132. Both RCON and game play listen on the same port. RCON on the TCP connection and game play on the UDP connection. 

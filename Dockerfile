@@ -1,4 +1,4 @@
-FROM ubuntu/latest
+FROM ubuntu:latest
 MAINTAINER Robert Soeting <robert@soeting.net>
 
 RUN apt-get -y install python3-yaml

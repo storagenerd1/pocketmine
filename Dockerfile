@@ -1,10 +1,10 @@
-FROM bartt/ubuntu-base
+FROM ubuntu/ubuntu-base
 MAINTAINER Robert Soeting <robert@soeting.net>
 
 RUN apt-get -y install python3-yaml
 
 RUN mkdir /pocketmine
-RUN cd /pocketmine && curl -sL http://get.pocketmine.net/ | bash -s - -r
+RUN cd /pocketmine && curl -sL http://get.pocketmine.net/ | bash -s - -r -v stable
 
 VOLUME /pocketmine
 WORKDIR /pocketmine

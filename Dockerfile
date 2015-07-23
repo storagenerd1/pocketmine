@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 MAINTAINER Robert Soeting <robert@soeting.net>
 
-RUN apt-get -y install python3-yaml
+RUN apt-get -y install python3-yaml curl
 
 RUN mkdir /pocketmine
 RUN cd /pocketmine && curl -sL http://get.pocketmine.net/ | bash -s - -r -v stable
